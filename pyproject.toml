@@ -1,0 +1,26 @@
+[project]
+name = "bank-ai-application"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { email = "mayanja.km@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "langchain>=1.4.9",
+    "langchain-community>=0.4.2",
+    "langchain-openai>=1.7.4",
+    "langgraph>=1.2.20",
+    "pypdf>=6.21.4",
+    "python-dotenv>=1.2.4",
+    "rank-bm25>=0.2.2",
+    "streamlit>=1.66.1",
+]
+
+[project.scripts]
+bank-ai-application = "bank_ai_application:main"
+
+[build-system]
+requires = ["uv_build>=0.13.7,<0.14.0"]
+build-backend = "uv_build"
