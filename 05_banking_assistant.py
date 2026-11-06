@@ -65,7 +65,8 @@ def load_account() -> dict:
 
 def save_account(account: dict) -> None:
     """Write the account details back to the JSON file (saves to disk)."""
-    ACCOUNT_FILE.write_text(json.dumps(account, indent=2), encoding="utf-8")
+    ACCOUNT_FILE.write_text(json.dumps(account, indent=2), encoding="utf-8") 
+    
 
 
 # ---------------------------------------------------------------------------
