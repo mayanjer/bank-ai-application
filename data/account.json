@@ -1,5 +1,11 @@
-{
+[{
   "name": "Hawa Nakato",
   "account_number": "SB-1001",
   "balance": 2001000000.0
-}
+},
+
+{
+    "name": "Baganzi Bashir",
+    "account_number":"SB-1002",
+    "balance":0
+}]

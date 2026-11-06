@@ -72,10 +72,17 @@ def withdraw(amount: float) -> str:
     save_account(account)
     return f"Withdrew UGX {amount:,.0f}. New balance: UGX {account['balance']:,.0f}."
 
+def read_account_name() -> str:
+    """The tool picks the account name"""
+    account = load_account()
+    return account["name"]
+
+   
+
 
 agent = create_agent(
     model=model,
-    tools=[check_balance, deposit, withdraw],
+    tools=[check_balance, deposit, withdraw, read_account_name],
     system_prompt=(
         "You are a helpful bank assistant. Use a tool to check the balance, "
         "deposit, or withdraw money -- never make up numbers. Confirm what you "
